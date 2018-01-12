@@ -1,0 +1,15 @@
+停止MySQL
+1添加删除程序中卸载MySQL(控制面板)
+2到安装目录删除MySQL，默认是 Program Files
+3删除：C:\Documents and Settings\All Users\Application Data\MySQL（有该目录必须删除掉）
+       C:\ProgramData\MySQL
+备注：ProgramData(系统默认隐藏)找不到，需要将隐藏文件显示；
+4查看注册表：
+
+运行-输入regedit命令：
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mysql
+HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\mysql
+HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Services\mysql
+
+搜索mysql或者MySQL，找到一律干掉！
+

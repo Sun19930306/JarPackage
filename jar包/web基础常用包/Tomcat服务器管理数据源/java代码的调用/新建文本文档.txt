@@ -1,0 +1,7 @@
+<%
+		Context initContext = new InitialContext();
+		DataSource ds = (DataSource) initContext.lookup("java:/comp/env/jdbc/Day13_JNDI");
+		System.out.println("ds="+ds);
+		Connection c= ds.getConnection();
+		System.out.print("c="+c);
+	%>

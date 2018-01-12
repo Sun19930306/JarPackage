@@ -1,0 +1,2 @@
+文件上传不能使用reque.getParameteMap(request)来获得实例
+UploadUtils.handleUploadForm(request);调用UploadUtils来获得request的参数
